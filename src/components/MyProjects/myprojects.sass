@@ -1,0 +1,42 @@
+@use '../../styles/variables.sass'
+
+h2
+    font-size: 2.2em
+
+    background-color: variables.$container-color
+    background: none
+
+    &:hover
+        color: variables.$contrast-color
+        text-decoration: underline
+        animation: slide-in 3.5s infinite
+
+        @keyframes slide-in
+            100%
+                transform: scale(1.1)
+.projects-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    
+    background: variables.$card-color
+    border-radius: variables.$card-border-radius
+
+    padding: 1em
+    margin: 5px
+    h3
+        background: none
+    a
+        background: none
+        text-decoration: underline
+        color: variables.$text-color
+        font-weight: bold
+
+        &:hover
+            color: variables.$title-color
+
+    .project-gif
+        
+        width: 100%
+        border-radius: 1px
+        position: static

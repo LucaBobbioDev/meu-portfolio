@@ -1,0 +1,111 @@
+@use '../../styles/variables.sass'
+
+.sidebar-container
+    background-color: variables.$container-color
+
+    display: flex
+    flex-direction: column
+    flex: 1 1 0
+
+    align-items: center
+    text-align: center
+
+    padding: 3em 1em
+    position: relative
+
+    border: 2px solid #000
+    border-image: linear-gradient(#5b2385, #7248a1) 1
+    animation: rotate 5.5s ease-in-out
+
+    @keyframes rotate 
+        50% 
+            border-image: linear-gradient(350deg, #5b2385, #7248a1) 1
+
+    p:not(.sidebar-title)
+        background-color: variables.$container-color
+        color: variables.$text-color
+
+img
+    max-width: 60%
+    position: absolute
+    top: .2em
+
+    border-radius: 2em
+    margin: 1em
+
+.sidebar-title
+    color: variables.$title-color
+    background-color: variables.$secondary-color
+
+    border-radius: 6px
+
+    margin-top: 16em
+    margin-bottom:1em
+    padding: .8rem 1.2rem
+
+    span
+        background-color: variables.$secondary-color
+        color: #9658c5
+
+        text-decoration: underline
+        font-weight: bold
+
+.sidebar-social
+    background: none
+
+    a
+        color: white
+        margin: .5px 10px
+        padding: 10px
+        border-radius: variables.$card-border-radius
+
+        &:hover
+            opacity: 0.5
+
+.sidebar-contact
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    width: 70%
+    padding: 3px
+    border: 2px solid variables.$secondary-color
+
+    background-color: variables.$card-color
+
+    button
+        display: flex
+        align-items: center
+        justify-content: center
+
+        width: 100%
+
+        padding: 2px
+        margin: 5px
+
+        font-size: 1em
+        &:hover
+            cursor: pointer
+
+.sidebar-link-button
+    border-radius: 6px
+    font-size: 1.3em
+    padding: 1rem 1.2rem
+    margin: 1em
+
+    background: variables.$button-gradient
+    color: variables.$text-color
+
+    &:hover
+        color: variables.$container-color
+        background: variables.$button-hover-gradient
+
+.img-gif
+    position: static
+    max-width: 50%
+
+
+
+
+    
+

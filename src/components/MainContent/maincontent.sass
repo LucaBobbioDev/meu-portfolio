@@ -1,0 +1,70 @@
+@use '../../styles/variables.sass'
+
+.main-content-container
+    background-color: variables.$container-color
+    color: variables.$text-color
+
+    display: flex
+    flex-direction: column
+    flex: 2 1 0
+
+    padding: 1em 1em
+
+    border: 2px solid #000
+    border-image: linear-gradient(#5b2385, #7248a1) 1
+    animation: rotate 2.5s ease-in-out
+
+    @keyframes rotate 
+        50% 
+            border-image: linear-gradient(350deg, #5b2385, #7248a1) 1
+            
+    section
+        background-color: variables.$container-color
+        margin: 2px
+
+        h2
+            font-size: 2.2em
+
+            background-color: variables.$container-color
+            background: none
+
+            &:hover
+                    color: variables.$contrast-color
+                    text-decoration: underline
+                    animation: slide-in 3.5s infinite
+
+                    @keyframes slide-in
+                        100%
+                            transform: scale(1.1)
+p
+    background: none
+    background-color: variables.$card-color
+
+    margin: 2px
+    padding: 5px
+
+.left-section-icon
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    .right-section-icon
+        display: flex
+        
+.button-container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    background-color: variables.$card-color
+
+    button
+        width: 100%
+        padding: 2px 2em
+        font-size: 1em
+        &:hover
+            font-weight: bold
+            cursor: pointer
+        
+    
+        
