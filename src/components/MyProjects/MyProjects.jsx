@@ -1,11 +1,14 @@
 import React from 'react'
 
+//Gifs
 import HandLender from '../../assets/gifs/hand-lender.gif';
 import SeuFilme from '../../assets/gifs/seu-filme.gif'
+import FireChat from '../../assets/gifs/fire-chat.gif'
 import ConsumoApi from '../../assets/gifs/consumo-api.gif'
 import Verificador from '../../assets/gifs/verificador-idade.gif'
 import ToDoList from '../../assets/gifs/todo-list.gif'
 
+//Estilização
 import './myprojects.sass'
 
 export const MyProjects = () => {
@@ -23,6 +26,12 @@ export const MyProjects = () => {
           <img className='project-gif' src={SeuFilme} alt="Gif of the react website movieslib" />
           <br />
           <a href="https://github.com/LucaBobbioDev/movies-app" target='blank'> -&gt; Repositório</a>
+        </div>
+        <div className='projects-container'>
+          <h3>React JS - Firechat</h3>
+          <img className='project-gif' src={FireChat} alt="Gif of the react web application Firechat" />
+          <br />
+          <a href="https://github.com/LucaBobbioDev/chat-firebase" target='blank'> -&gt; Repositório</a>
         </div>
         <div className='projects-container'>
           <h3>React JS - Consumindo API</h3>
