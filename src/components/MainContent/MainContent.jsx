@@ -14,11 +14,12 @@ export const MainContent = () => {
 
   return (
     <main className='main-content-container'>
-        <section className='section-about-container'>
+        <section className='section-about-me-container'>
           <h2>Sobre mim</h2>
           <p>
-            Sou estudante de Análise e Desenvolvimento de Sistemas na Fatec Santana de Parnaíba. Como estudante de desenvolvimento de software tenho interesse no desenvolvimento de aplicações web. <br/> <br />
-            Atualmente venho estudando HTML5, CSS3, JavaScript e a biblioteca/framework React para o desenvolvimento de SPA (Single Page Application), além de também estudar React Native para aplicações mobile do tipo cross-platform.
+          Sou um profissional formado em Análise e Desenvolvimento de Sistemas pela Fatec Santana de Parnaíba. Tenho 1 ano de experiência como desenvolvedor júnior na área Salesforce, trabalhando diariamente com tecnologias como Apex, LWC, Visualforce, SOSL/SOQL e etc. 
+          <br /> <br />
+          Também possuo conhecimento em ReactJS, Java, C# (.NET), Python, Shell Script. Dentre essas tecnologias secundárias, possuo um interesse maior no desenvolvimento de aplicações web com o framework React JS.
           </p>
         </section>
         <section className='section-tecnhology-container'>
