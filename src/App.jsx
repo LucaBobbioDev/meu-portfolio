@@ -17,7 +17,7 @@ function App() {
       
       <footer className='app-footer'>
         <p>
-          Luca Bobbio &copy; 2022
+          Luca Bobbio &copy; 2023 - v2
         </p>
       </footer>
     </div>
