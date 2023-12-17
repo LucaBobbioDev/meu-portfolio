@@ -25,13 +25,44 @@
         background-color: variables.$container-color
         color: variables.$text-color
 
+.typing-effect-container
+    border-radius: 6px
+    background: none
+    padding: 5px    
+
+    .typing-effect 
+        text-align: justify
+
+        color: variables.$text-color
+        background: none
+        background-color: variables.$card-color
+
+        margin: 3px
+        padding: 1px
+    
+    .typing-effect-button
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+
+        background: none
+        background-color: variables.$card-color
+        color: variables.$text-color
+        
+        margin: 3px
+        padding: 1px
+        border: none
+
+
+
 img
     max-width: 60%
-    position: absolute
+    position: static
     top: .2em
 
     border-radius: 2em
-    margin: 1em
+    margin: 2em
 
 .sidebar-title
     color: variables.$title-color
