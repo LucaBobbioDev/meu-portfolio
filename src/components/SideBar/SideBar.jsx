@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { format, differenceInYears } from 'date-fns';
+import { differenceInYears } from 'date-fns';
 
 import Avatar from '../../assets/pfpLuca.jpeg'
 import Gif from '../../assets/gifs/man-on-computer.gif'
