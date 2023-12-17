@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { format, differenceInYears } from 'date-fns';
 
-import Avatar from '../../assets/pfpLuca.jpg'
+import Avatar from '../../assets/pfpLuca.jpeg'
 import Gif from '../../assets/gifs/man-on-computer.gif'
 import Document from '../../assets/docs/Luca Bobbio - Curriculo.pdf'
 
-import { FaLinkedinIn, FaGithub, FaFacebook } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaFacebook, FaSalesforce} from "react-icons/fa";
 import { VscChevronDown,  VscChevronRight} from "react-icons/vsc";
 import { AiFillPhone, AiFillMail } from "react-icons/ai";
 
@@ -80,15 +80,18 @@ export const SideBar = () => {
             </div>
             <div className='sidebar-social'>
                 <p>Redes Sociais</p> <br />
-                <a href="https://www.linkedin.com/in/luca-bobbio-0135b2240/" target="_blank"> 
+                <a href="https://www.linkedin.com/in/luca-bobbio-0135b2240/" target="_blank" title="Linkedin Profile"> 
                     <FaLinkedinIn/>
                 </a>
-                <a href="https://github.com/LucaBobbioDev" target="_blank" >
+                <a href="https://github.com/LucaBobbioDev" target="_blank" title="Github Profile">
                     <FaGithub/>
                 </a>
-                <a href="https://www.facebook.com/Luca.bobbio.1/" target="_blank" >
+                <a href="https://www.facebook.com/Luca.bobbio.1/" target="_blank" title="Facebook Profile">
                     <FaFacebook/>
                 </a>      
+                <a href="https://www.salesforce.com/trailblazer/lbobbio" target="_blank" title="Trailblazer Profile">
+                    <FaSalesforce/>
+                </a> 
             </div>
 
             <br/>
